@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <!--Form başlığı ve açıklaması-->
+    <form id="survey-form">
+  <h1 id="title">Kayıt Formu</h1>
+  <p id="description">Lütfen aşağıdaki formu doldurunuz.</p>
+
+ 
+    <!--Ad-Soyad girişi-->
+    <label  id="name-label">Ad Soyad:</label>
+    <input type="text" id="name" name="name" required placeholder="Adınızı ve soyadınızı giriniz."  /><br><br>
+    <!--E-posta girişi-->
+    <label id="email-label">E-Posta:</label>
+    <input type="email" id="email" name="email" required placeholder="E-posta adresinizi giriniz." /><br><br>
+     <!--Yaş girişi-->
+    <label id="number-label">Yaş:</label>
+    <input type="number" id="number" name="number" min="18" max="100" required placeholder="Yaşınızı giriniz." /><br><br>
+
+      <!--Yaşadığı şehir seçimi-->
+    <label for="dropdown" id="dropdown-label">Yaşadığınız Şehir:</label>
+    <select id="dropdown" name="dropdown">
+      <option value="istanbul">İstanbul</option>
+      <option value="ankara">Ankara</option>
+      <option value="izmir">İzmir</option>
+      <option value="antalya">Antalya</option>
+      <option value="bursa">Bursa</option>
+      <option value="konya">Konya</option>
+      <option value="adana">Adana</option>
+      <option value="mardin">Mardin</option>
+      <option value="samsun">Samsun</option>
+      <option value="trabzon">Trabzon</option>
+    </select> 
+    <br><br>
+     <!--Radyo Düğmeleri-->
+    <label for="radio-buttons" id="radio-buttons-label">Cinsiyet:</label><br>
+    
+      <label><input name="radio-buttons" value="erkek" type="radio" class="input-radio" checked /> Erkek </label>
+      <label><input name="radio-buttons" value="kadın" type="radio" class="input-radio" /> Kadın </label>
+    
+    <br><br>
+    
+    <!--Checkboxlar-->
+    <label for="checkbox" id="checkbox-label">Hobileriniz:</label>
+    <br>
+    <input name="checkbox" value="spor" type="checkbox" /> Spor 
+    <input name="checkbox" value="müzik" type="checkbox" /> Müzik
+    <br><br>
+   
+     <!--Metin-->
+
+    <label  id="comments-label">Eklemek İstediğiniz Notlar:</label><br>
+    <textarea id="comments" name="comments" placeholder="Eklemek istediğiniz notları buraya yazabilirsiniz."></textarea>
+    <br><br>
+
+    <!--Gönder Butonu-->
+    <button type="submit" id="submit">Gönder</button>
+    
+     
+
+  </form>
+</body>
+</html>
